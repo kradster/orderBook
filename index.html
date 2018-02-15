@@ -7,7 +7,13 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/components/message.min.css">
     <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.14/components/button.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="ttps://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-lite/1.1.0/material.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.16/css/dataTables.material.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.3/animate.min.css">
     <title>OrderBook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
@@ -26,47 +32,50 @@
             </div>
         </nav>
     </div>
-    
-    <div id="modal1" class="modal">
-    <div class="modal-content">
-      <h4>Your Order</h4>
-      <div class="divider"></div>
-      <br/>
-      <div class="row">
-          <div class="col s12">
-              <div class="col s12">
-                  <div class="col s6">
-                      <div class="ui message mini">Amount</div>
-                  </div>
-                  <div class="col s6">
-                      <div class="ui message mini green lighten-4 black-text">0.45</div>
-                  </div>
-              </div>
-              <div class="col s12">
-                 <br/>
-                  <div class="col s6">
-                      <div class="ui message mini">Price</div>
-                  </div>
-                  <div class="col s6">
-                      <div class="ui message mini green lighten-4 black-text">34000</div>
-                  </div>
-              </div>
-          </div>
-      </div>
+
+    <div id="modal1" class="modal ">
+        <div class="modal-content">
+            <h4>Buy Order</h4>
+            <div class="divider"></div>
+               <div class="row">
+                <div class="col s12">
+                    <div class="col s6">
+                        <p><b>Type</b><span class="right">Limit Buy</span></p>
+                    </div>
+                    <div class="col s6">
+                        <p><b>Market</b>:<span class="right">BTC-INR</span></p>
+                    </div>
+                </div>
+            </div>
+                <div class="col s6 offset-s3">
+                        <p><b>Quantity</b><span class="right">100.000  <b>INR</b></span></p>
+                </div>
+                <div class="col s6 offset-s3">
+                        <p><b>Price</b><span class="right">100.000  <b>BTC</b></span></p>
+                </div>
+                <div class="col s6 offset-s3">
+                        <p><b>Subtotal</b><span class="right">100.000  <b>BTC</b></span></p>
+                </div>
+                <div class="col s6 offset-s3">
+                        <p><b>Commission</b><span class="right">100.000  <b>BTC</b></span></p>
+                </div>
+                <div class="col s6 offset-s3">
+                        <p><b>Total</b><span class="right">100.000  <b>BTC</b></span></p>
+                </div>
+        </div>
+        <div class="modal-footer">
+               <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
+            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Go back</a>
+        </div>
     </div>
-    <div class="modal-footer">
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Agree</a>
-      <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Go back</a>
-    </div>
-  </div>
-    
+
     <div class="container">
-       <div class="card">
-        <h3 style="font-weight:200">Rate Chart</h3>
-        <canvas id="myChart"></canvas>   
-       </div>
+        <div class="card">
+            <h3 style="font-weight:200">Rate Chart</h3>
+            <canvas id="myChart"></canvas>
+        </div>
     </div>
-    
+
     <div class="row container">
         <div class="col s12 m12 l4">
             <div class="card" style="padding:8px;">
@@ -95,35 +104,32 @@
                         <form action="">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input id="icon_prefix" type="text" class="validate blue-text">
-                                    <label for="icon_prefix">Enter Amount</label>
+                                    <input id="buy_amnt" type="text" class="validate blue-text">
+                                    <label for="buy_amnt">Enter Amount</label>
                                 </div>
                                 <div class="input-field col s12">
-                                    <input id="icon_telephone" type="tel" class="validate">
-                                    <label for="icon_telephone">Enter Price</label>
+                                    <input id="buy_price" type="tel" class="validate">
+                                    <label for="buy_price">Enter Price</label>
                                 </div>
                             </div>
                             <p class="center-align" style="font-weight: bolder">Approx (INR):2000/-</p>
                         </form>
-                        </div>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col s12">
+                    <!--div class="col s12">
                         <div class="col s6 green-text right-align">Fees</div>
                         <div class="col s6 center">0.01 (Maker)
-                        <div class="divider"></div>
+                            <div class="divider"></div>
                         </div>
-                    </div>
-                    <div class="col s12">
+                    </div-->
+                    <!--div class="col s12">
                         <div class="col s6 offset-s6 center">0.002 (Taker)</div>
-                    </div>
-                    <div class="col s12 container">
-                        <div class="col s6"><a href="">More About Fees</a></div>
-                    </div>
+                    </div-->
                 </div>
                 <div class="row">
                     <div class="col s12">
-                        <div id="buybtn"  class="ui fluid animated button right blue white-text" tabindex="0">
+                        <div id="buybtn" class="ui fluid animated button right blue white-text" tabindex="0">
                             <div class="visible content">BUY NOW</div>
                             <div class="hidden content">
                                 <i class="fas fa-arrow-right"></i>
@@ -172,12 +178,12 @@
                         <form action="">
                             <div class="row">
                                 <div class="input-field col s12">
-                                    <input id="icon_prefix" type="text" class="validate blue-text">
-                                    <label for="icon_prefix">Enter Amount</label>
+                                    <input id="sell_amnt" type="text" class="validate blue-text">
+                                    <label for="sell_amnt">Enter Amount</label>
                                 </div>
                                 <div class="input-field col s12">
-                                    <input id="icon_telephone" type="tel" class="validate">
-                                    <label for="icon_telephone">Enter Price</label>
+                                    <input id="sell_price" type="tel" class="validate">
+                                    <label for="sell_price">Enter Price</label>
                                 </div>
                             </div>
                             <p class="center-align" style="font-weight: bolder">Approx (INR):2000/-</p>
@@ -185,18 +191,15 @@
                     </div>
                 </div>
                 <div class="row">
-                    <div class="col s12">
+                    <!--div class="col s12">
                         <div class="col s6 green-text right-align">Fees</div>
                         <div class="col s6 center">100/- (INR)
-                        <div class="divider"></div>
+                            <div class="divider"></div>
                         </div>
-                    </div>
-                    <div class="col s12">
+                    </div-->
+                    <!--div class="col s12">
                         <div class="col s6 offset-s6 center">200/- (INR)</div>
-                    </div>
-                    <div class="col s12 container">
-                        <div class="col s6"><a href="">More About Fees</a></div>
-                    </div>
+                    </div-->
                 </div>
                 <div class="row">
 
@@ -228,78 +231,78 @@
                 <div class="row center">
                     <div class="col s12">
                         <div class="ui purple white-text message">
-                            <img src="https://seeklogo.com/images/D/dentacoin-dcn-logo-7349E5EE90-seeklogo.com.png" alt="" style="width:25px;height:25px;display:inline-block;"> Coin Info
+                                <img src="https://seeklogo.com/images/D/dentacoin-dcn-logo-7349E5EE90-seeklogo.com.png" alt="" style="width:25px;height:25px;display:inline-block;"> Coin Info
                         </div>
                     </div>
 
                 </div>
                 <div class="row">
-                    <div class="col s8">
+                    <div class="col s5">
                         <div class="ui white">
                             <h5 style="font-weight:100">Last trade</h5>
                         </div>
                     </div>
-                    <div class="col s4"></div>
+                    <p class="col s5 offset-s1 lighten-3" id="ltd"></p>
                 </div>
                 <div class="row">
-                    <div class="col s8">
+                    <div class="col s5">
                         <div class="ui  white">
-                            Last trade volume
+                            Last volume
                         </div>
                     </div>
-                    <div class="col s4"></div>
+                    <div class="col s5 offset-s1 lighten-3" id="ltv">fbfb</div>
                 </div>
                 <div class="row">
-                    <div class="col s8">
+                    <div class="col s5">
                         <div class="ui white">
                             % change
                         </div>
                     </div>
-                    <div class="col s4"></div>
+                    <div class="col s5 offset-s1 lighten-3" id="pcng">fgfd</div>
                 </div>
-                <div class="divider"></div><br/>
+                <div class="divider"></div>
                 <div class="row">
-                    <div class="col s8">
+                    <div class="col s5">
                         <div class="ui white">
                             24hr volume
                         </div>
                     </div>
-                    <div class="col s4"></div>
+                    <div class="col s5 offset-s1 lighten-3" id="hrvol">dadg</div>
                 </div>
                 <div class="row">
-                    <div class="col s8">
+                    <div class="col s5">
                         <div class="ui white">
                             24hr high
                         </div>
                     </div>
-                    <div class="col s4"></div>
+                    <div class="col s5 offset-s1 lighten-3" id="hrhigh">dgdg</div>
                 </div>
                 <div class="row">
-                    <div class="col s8">
+                    <div class="col s5">
                         <div class="ui white">
                             24hr low
                         </div>
                     </div>
-                    <div class="col s4"></div>
+                    <div class="col s5 offset-s1 lighten-3" id="hrlow">fbsfb</div>
                 </div>
                 <div class="divider"></div><br/>
                 <div class="row">
-                    <div class="col s8">
+                    <div class="col s5">
                         <div class="ui white">
                             All time high
                         </div>
                     </div>
-                    <div class="col s4"></div>
+                    <div class="col s5 offset-s1 lighten-3" id="ath">dagae</div>
                 </div>
                 <div class="row">
-                    <div class="col s8">
+                    <div class="col s5">
                         <div class="ui white">
                             All time low
                         </div>
                     </div>
-                    <div class="col s4"></div>
+                    <div class="col s5 offset-s1 lighten-3" id="atl">sdgedgae</div>
                 </div>
-                <div class="col s6"><a href="">MORE INFO</a></div><br/><br/>
+
             </div>
         </div>
 
@@ -309,65 +312,860 @@
         <div class="col s6">
             <h2 style="font-weight: 100">BIDS</h2>
             <div class="card col s12">
-                <table class="striped">
-        <thead>
-          <tr>
-              <th>Amount</th>
-              <th>Price</th>
-              <th>Value</th>
-          </tr>
-        </thead>
+                <table class="striped mdl-data-table" id="bid_table">
+                    <thead>
+                        <tr>
+                            <th>Amount</th>
+                            <th>Price</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
 
-        <tbody>
-          <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-            <td>$0.87</td>
-          </tr>
-          <tr>
-            <td>Alan</td>
-            <td>Jellybean</td>
-            <td>$3.76</td>
-          </tr>
-          <tr>
-            <td>Jonathan</td>
-            <td>Lollipop</td>
-            <td>$7.00</td>
-          </tr>
-        </tbody>
-      </table>
+                    <tbody>
+                                               <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                                                <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         <div class="col s6">
             <h2 style="font-weight: 100">ASKS</h2>
             <div class="card col s12">
                 <table class="striped">
-        <thead>
-          <tr>
-              <th>Amount</th>
-              <th>Price</th>
-              <th>Value</th>
-          </tr>
-        </thead>
+                    <thead>
+                        <tr>
+                            <th>Amount</th>
+                            <th>Price</th>
+                            <th>Value</th>
+                        </tr>
+                    </thead>
 
-        <tbody>
-          <tr>
-            <td>Alvin</td>
-            <td>Eclair</td>
-            <td>$0.87</td>
-          </tr>
-          <tr>
-            <td>Alan</td>
-            <td>Jellybean</td>
-            <td>$3.76</td>
-          </tr>
-          <tr>
-            <td>Jonathan</td>
-            <td>Lollipop</td>
-            <td>$7.00</td>
-          </tr>
-        </tbody>
-      </table>
+                    <tbody>
+                        <tr>
+                            <td>Alvin</td>
+                            <td>Eclair</td>
+                            <td>$0.87</td>
+                        </tr>
+                        <tr>
+                            <td>Alan</td>
+                            <td>Jellybean</td>
+                            <td>$3.76</td>
+                        </tr>
+                        <tr>
+                            <td>Jonathan</td>
+                            <td>Lollipop</td>
+                            <td>$7.00</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
     </div>
@@ -376,41 +1174,41 @@
         <div class="card col s12">
             <table class="striped centered">
                 <thead>
-                   <tr>
-                    <th>Id</th>
-                    <th>Amount</th>
-                    <th>Price</th>
-                    <th>Value</th>
-                    <th>Type</th>
-                    <th>Time</th>
+                    <tr>
+                        <th>Id</th>
+                        <th>Amount</th>
+                        <th>Price</th>
+                        <th>Value</th>
+                        <th>Type</th>
+                        <th>Time</th>
                     </tr>
                 </thead>
                 <tbody>
-          <tr>
-            <td>1</td>
-            <td>359</td>
-            <td>0.87</td>
-            <td>34567</td>
-            <td>buy</td>
-            <td>2018-02-01</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>3459</td>
-            <td>0.87</td>
-            <td>3457</td>
-            <td>sell</td>
-            <td>2018-02-06</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>349</td>
-            <td>0.87</td>
-            <td>3567</td>
-            <td>buy</td>
-            <td>2018-02-11</td>
-          </tr>
-        </tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>359</td>
+                        <td>0.87</td>
+                        <td>34567</td>
+                        <td>buy</td>
+                        <td>2018-02-01</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>3459</td>
+                        <td>0.87</td>
+                        <td>3457</td>
+                        <td>sell</td>
+                        <td>2018-02-06</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>349</td>
+                        <td>0.87</td>
+                        <td>3567</td>
+                        <td>buy</td>
+                        <td>2018-02-11</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
@@ -419,49 +1217,49 @@
         <div class="card col s12">
             <table class="striped">
                 <thead>
-                   <tr>
-                    <th>Id</th>
-                    <th>Amount</th>
-                    <th>Filled</th>
-                    <th>Price</th>
-                    <th>Value</th>
-                    <th>Status</th>
-                    <th>Type</th>
-                    <th>Fee</th>
+                    <tr>
+                        <th>Id</th>
+                        <th>Amount</th>
+                        <th>Filled</th>
+                        <th>Price</th>
+                        <th>Value</th>
+                        <th>Status</th>
+                        <th>Type</th>
+                        <th>Fee</th>
                     </tr>
                 </thead>
                 <tbody>
-          <tr>
-            <td>1</td>
-            <td>359</td>
-            <td>8</td>
-            <td>0.10</td>
-            <td>34567</td>
-            <td>success</td>
-            <td>sell</td>
-            <td>0.2</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>359</td>
-            <td>8</td>
-            <td>0.10</td>
-            <td>34567</td>
-            <td>success</td>
-            <td>sell</td>
-            <td>0.2</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>359</td>
-            <td>8</td>
-            <td>0.10</td>
-            <td>34567</td>
-            <td>success</td>
-            <td>sell</td>
-            <td>0.2</td>
-          </tr>
-        </tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>359</td>
+                        <td>8</td>
+                        <td>0.10</td>
+                        <td>34567</td>
+                        <td>success</td>
+                        <td>sell</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>359</td>
+                        <td>8</td>
+                        <td>0.10</td>
+                        <td>34567</td>
+                        <td>success</td>
+                        <td>sell</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>359</td>
+                        <td>8</td>
+                        <td>0.10</td>
+                        <td>34567</td>
+                        <td>success</td>
+                        <td>sell</td>
+                        <td>0.2</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
@@ -470,49 +1268,49 @@
         <div class="card col s12">
             <table class="striped">
                 <thead>
-                   <tr>
-                    <th>Id</th>
-                    <th>Amount</th>
-                    <th>Filled</th>
-                    <th>Price</th>
-                    <th>Value</th>
-                    <th>Status</th>
-                    <th>Type</th>
-                    <th>Fee</th>
+                    <tr>
+                        <th>Id</th>
+                        <th>Amount</th>
+                        <th>Filled</th>
+                        <th>Price</th>
+                        <th>Value</th>
+                        <th>Status</th>
+                        <th>Type</th>
+                        <th>Fee</th>
                     </tr>
                 </thead>
-                 <tbody>
-          <tr>
-            <td>1</td>
-            <td>359</td>
-            <td>8</td>
-            <td>0.10</td>
-            <td>34567</td>
-            <td>success</td>
-            <td>sell</td>
-            <td>0.2</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>359</td>
-            <td>8</td>
-            <td>0.10</td>
-            <td>34567</td>
-            <td>success</td>
-            <td>sell</td>
-            <td>0.2</td>
-          </tr>
-          <tr>
-            <td>3</td>
-            <td>359</td>
-            <td>8</td>
-            <td>0.10</td>
-            <td>34567</td>
-            <td>success</td>
-            <td>sell</td>
-            <td>0.2</td>
-          </tr>
-        </tbody>
+                <tbody>
+                    <tr>
+                        <td>1</td>
+                        <td>359</td>
+                        <td>8</td>
+                        <td>0.10</td>
+                        <td>34567</td>
+                        <td>success</td>
+                        <td>sell</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>359</td>
+                        <td>8</td>
+                        <td>0.10</td>
+                        <td>34567</td>
+                        <td>success</td>
+                        <td>sell</td>
+                        <td>0.2</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>359</td>
+                        <td>8</td>
+                        <td>0.10</td>
+                        <td>34567</td>
+                        <td>success</td>
+                        <td>sell</td>
+                        <td>0.2</td>
+                    </tr>
+                </tbody>
             </table>
         </div>
     </div>
@@ -520,17 +1318,45 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
-    <script>
-        $(document).ready(function(){
-    // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
-    $('.modal').modal();
-            
-    $("#sellbtn").on('click',function(){
-        $('#modal1').modal('open');
-    });
-  });
+    <script type="text/javascript" src="js/salecoin.js"></script>
+    <script type="text/javascript" src="js/buycoin.js"></script>
+    <script type="text/javascript" src="js/bids.js"></script>
+    <script type="text/javascript" src="js/mychart.js"></script>
+    <script type="text/javascript" src="js/coinInfo.js"></script>
+    <script type="text/javascript" src="js/bids.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mouse0270-bootstrap-notify/3.1.5/bootstrap-notify.min.js">
     </script>
-    <script type="text/javascript" src="mychart.js"></script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/jquery.dataTables.min.js">
+    </script>
+    <script type="text/javascript" src="https://cdn.datatables.net/1.10.16/js/dataTables.material.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            // the "href" attribute of the modal trigger must specify the modal ID that wants to be triggered
+            $('.modal').modal();
+
+            $('#buybtn').click(function() {
+                $('#modal1').modal('open');
+            });
+
+            //var bidTable = $('#bid_table');
+
+            //bidTable.DataTable( {
+        columnDefs: [
+            {
+                targets: [ 0, 1, 2 ],
+                className: 'mdl-data-table__cell--non-numeric',
+                "info":false
+            }
+        ]
+    });
+
+
+
+
+
+        });
+
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,232 @@
+{
+  "data": {
+    "crypto": {
+      "ark": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "bat": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "bcc": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "btc": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "bts": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "cloak": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "cvc": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "dash": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "dcn": {
+        "24_high": 76.0, 
+        "24_low": 10.0, 
+        "change": "63500.00", 
+        "last_trade": 73.5, 
+        "vol": 573680.0
+      }, 
+      "dgb": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "doge": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "etc": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "eth": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "fct": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "gnt": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "inr": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "lsk": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "ltc": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "neo": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "nxt": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "omg": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "pay": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "pivx": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "qtum": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "rep": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "sc": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "steem": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "strat": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "xem": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "xmr": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "xrp": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }, 
+      "zec": {
+        "24_high": 0.0, 
+        "24_low": 0.0, 
+        "change": "0.00", 
+        "last_trade": 0.0, 
+        "vol": 0.0
+      }
+    }
+  }, 
+  "message": [], 
+  "status": "Success"
+}

@@ -1,0 +1,229 @@
+{
+  "crypto": {
+    "ark": {
+      "crypto_fee": 0, 
+      "min_with": 2, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "bat": {
+      "crypto_fee": 10, 
+      "min_with": 30, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "bcc": {
+      "crypto_fee": 0, 
+      "min_with": 0, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "btc": {
+      "crypto_fee": 0, 
+      "min_with": 0, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "bts": {
+      "crypto_fee": 10, 
+      "min_with": 30, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "cloak": {
+      "crypto_fee": 0, 
+      "min_with": 0, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "cvc": {
+      "crypto_fee": 5, 
+      "min_with": 10, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "dash": {
+      "crypto_fee": 0, 
+      "min_with": 0, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "dcn": {
+      "crypto_fee": 5000, 
+      "min_with": 25, 
+      "portfolio": 573845100000000000, 
+      "wallet_val": 79370, 
+      "wallet_val_lock": 6000
+    }, 
+    "dgb": {
+      "crypto_fee": 10, 
+      "min_with": 100, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "doge": {
+      "crypto_fee": 1000, 
+      "min_with": 5000, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "etc": {
+      "crypto_fee": 0, 
+      "min_with": 1, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "eth": {
+      "crypto_fee": 0, 
+      "min_with": 0, 
+      "portfolio": 0, 
+      "wallet_val": 1, 
+      "wallet_val_lock": 1
+    }, 
+    "fct": {
+      "crypto_fee": 0, 
+      "min_with": 0, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "gnt": {
+      "crypto_fee": 1, 
+      "min_with": 10, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "inr": {
+      "crypto_fee": 0, 
+      "min_with": 0, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "lsk": {
+      "crypto_fee": 0, 
+      "min_with": 1, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "ltc": {
+      "crypto_fee": 0, 
+      "min_with": 0, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "neo": {
+      "crypto_fee": 0, 
+      "min_with": 1, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "nxt": {
+      "crypto_fee": 10, 
+      "min_with": 50, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "omg": {
+      "crypto_fee": 0, 
+      "min_with": 0, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "pay": {
+      "crypto_fee": 0, 
+      "min_with": 2, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "pivx": {
+      "crypto_fee": 0, 
+      "min_with": 2, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "qtum": {
+      "crypto_fee": 0, 
+      "min_with": 0, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "rep": {
+      "crypto_fee": 0, 
+      "min_with": 0, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "sc": {
+      "crypto_fee": 10, 
+      "min_with": 1000, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "steem": {
+      "crypto_fee": 0, 
+      "min_with": 2, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "strat": {
+      "crypto_fee": 0, 
+      "min_with": 2, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "xem": {
+      "crypto_fee": 20, 
+      "min_with": 25, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "xmr": {
+      "crypto_fee": 0, 
+      "min_with": 0, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "xrp": {
+      "crypto_fee": 1, 
+      "min_with": 10, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }, 
+    "zec": {
+      "crypto_fee": 0, 
+      "min_with": 0, 
+      "portfolio": 0, 
+      "wallet_val": 0, 
+      "wallet_val_lock": 0
+    }
+  }, 
+  "message": []
+}

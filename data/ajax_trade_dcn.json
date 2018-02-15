@@ -1,0 +1,494 @@
+{
+  "ask": 72300, 
+  "bid": 72200, 
+  "buy_orders": [
+    {
+      "price": 72.2, 
+      "vol": 9000
+    }, 
+    {
+      "price": 72.1, 
+      "vol": 1000
+    }, 
+    {
+      "price": 72.0, 
+      "vol": 10000
+    }, 
+    {
+      "price": 71.0, 
+      "vol": 19000
+    }, 
+    {
+      "price": 70.0, 
+      "vol": 2000
+    }, 
+    {
+      "price": 60.0, 
+      "vol": 10000
+    }, 
+    {
+      "price": 50.0, 
+      "vol": 10000
+    }, 
+    {
+      "price": 40.0, 
+      "vol": 8000
+    }, 
+    {
+      "price": 30.0, 
+      "vol": 7000
+    }, 
+    {
+      "price": 6.0, 
+      "vol": 200000
+    }, 
+    {
+      "price": 5.0, 
+      "vol": 2000
+    }, 
+    {
+      "price": 2.0, 
+      "vol": 100000
+    }, 
+    {
+      "price": 1.0, 
+      "vol": 110000
+    }
+  ], 
+  "market_history": [
+    {
+      "amount": 6000, 
+      "price": 0.715, 
+      "time": "Sat, 10 Feb 2018 01:43:43 GMT", 
+      "type": "Buy", 
+      "value": 4290.0
+    }, 
+    {
+      "amount": 1000, 
+      "price": 0.735, 
+      "time": "Sat, 10 Feb 2018 01:43:23 GMT", 
+      "type": "Buy", 
+      "value": 735.0
+    }, 
+    {
+      "amount": 1000, 
+      "price": 0.735, 
+      "time": "Sat, 10 Feb 2018 01:43:08 GMT", 
+      "type": "Buy", 
+      "value": 735.0
+    }, 
+    {
+      "amount": 4000, 
+      "price": 0.735, 
+      "time": "Fri, 09 Feb 2018 19:14:05 GMT", 
+      "type": "Buy", 
+      "value": 2940.0
+    }, 
+    {
+      "amount": 1000, 
+      "price": 0.74, 
+      "time": "Fri, 09 Feb 2018 19:13:58 GMT", 
+      "type": "Buy", 
+      "value": 740.0
+    }, 
+    {
+      "amount": 5000, 
+      "price": 0.74, 
+      "time": "Fri, 09 Feb 2018 19:13:58 GMT", 
+      "type": "Sell", 
+      "value": 3700.0
+    }, 
+    {
+      "amount": 3000, 
+      "price": 0.74, 
+      "time": "Fri, 09 Feb 2018 19:13:58 GMT", 
+      "type": "Buy", 
+      "value": 2220.0
+    }, 
+    {
+      "amount": 1000, 
+      "price": 0.74, 
+      "time": "Fri, 09 Feb 2018 19:13:58 GMT", 
+      "type": "Buy", 
+      "value": 740.0
+    }, 
+    {
+      "amount": 1000, 
+      "price": 0.751, 
+      "time": "Fri, 09 Feb 2018 19:13:50 GMT", 
+      "type": "Buy", 
+      "value": 751.0
+    }, 
+    {
+      "amount": 1000, 
+      "price": 0.751, 
+      "time": "Fri, 09 Feb 2018 19:13:50 GMT", 
+      "type": "Buy", 
+      "value": 751.0
+    }, 
+    {
+      "amount": 5000, 
+      "price": 0.752, 
+      "time": "Fri, 09 Feb 2018 16:49:02 GMT", 
+      "type": "Buy", 
+      "value": 3760.0
+    }, 
+    {
+      "amount": 2000, 
+      "price": 0.753, 
+      "time": "Fri, 09 Feb 2018 16:48:46 GMT", 
+      "type": "Buy", 
+      "value": 1506.0
+    }, 
+    {
+      "amount": 2000, 
+      "price": 0.753, 
+      "time": "Fri, 09 Feb 2018 16:48:46 GMT", 
+      "type": "Buy", 
+      "value": 1506.0
+    }, 
+    {
+      "amount": 24500, 
+      "price": 0.75, 
+      "time": "Fri, 09 Feb 2018 16:27:12 GMT", 
+      "type": "Buy", 
+      "value": 18375.0
+    }, 
+    {
+      "amount": 6000, 
+      "price": 0.76, 
+      "time": "Fri, 09 Feb 2018 16:18:54 GMT", 
+      "type": "Buy", 
+      "value": 4560.0
+    }, 
+    {
+      "amount": 10000, 
+      "price": 0.76, 
+      "time": "Fri, 09 Feb 2018 16:18:54 GMT", 
+      "type": "Sell", 
+      "value": 7600.0
+    }, 
+    {
+      "amount": 4000, 
+      "price": 0.76, 
+      "time": "Fri, 09 Feb 2018 16:12:11 GMT", 
+      "type": "Buy", 
+      "value": 3040.0
+    }, 
+    {
+      "amount": 4000, 
+      "price": 0.75, 
+      "time": "Fri, 09 Feb 2018 16:09:23 GMT", 
+      "type": "Sell", 
+      "value": 3000.0
+    }, 
+    {
+      "amount": 5000, 
+      "price": 0.75, 
+      "time": "Fri, 09 Feb 2018 16:06:08 GMT", 
+      "type": "Sell", 
+      "value": 3750.0
+    }, 
+    {
+      "amount": 5000, 
+      "price": 0.75, 
+      "time": "Fri, 09 Feb 2018 16:05:44 GMT", 
+      "type": "Sell", 
+      "value": 3750.0
+    }
+  ], 
+  "message": [], 
+  "orders_complete": [
+    {
+      "amount": 6000, 
+      "fee": 60, 
+      "price": 0.715, 
+      "time": "Sat, 10 Feb 2018 01:43:43 GMT", 
+      "type": "Buy", 
+      "value": 7150.0
+    }, 
+    {
+      "amount": 1000, 
+      "fee": 20, 
+      "price": 0.735, 
+      "time": "Sat, 10 Feb 2018 01:43:23 GMT", 
+      "type": "Buy", 
+      "value": 735.0
+    }, 
+    {
+      "amount": 1000, 
+      "fee": 20, 
+      "price": 0.735, 
+      "time": "Sat, 10 Feb 2018 01:43:08 GMT", 
+      "type": "Buy", 
+      "value": 735.0
+    }, 
+    {
+      "amount": 4000, 
+      "fee": 40, 
+      "price": 0.735, 
+      "time": "Fri, 09 Feb 2018 19:14:05 GMT", 
+      "type": "Buy", 
+      "value": 2940.0
+    }, 
+    {
+      "amount": 1000, 
+      "fee": 10, 
+      "price": 0.74, 
+      "time": "Fri, 09 Feb 2018 19:13:58 GMT", 
+      "type": "Buy", 
+      "value": 740.0
+    }, 
+    {
+      "amount": 1000, 
+      "fee": 10, 
+      "price": 0.74, 
+      "time": "Fri, 09 Feb 2018 19:13:58 GMT", 
+      "type": "Buy", 
+      "value": 740.0
+    }, 
+    {
+      "amount": 6000, 
+      "fee": 120, 
+      "price": 0.76, 
+      "time": "Fri, 09 Feb 2018 16:18:54 GMT", 
+      "type": "Buy", 
+      "value": 4560.0
+    }, 
+    {
+      "amount": 4000, 
+      "fee": 80, 
+      "price": 0.76, 
+      "time": "Fri, 09 Feb 2018 16:12:11 GMT", 
+      "type": "Buy", 
+      "value": 3040.0
+    }, 
+    {
+      "amount": 4000, 
+      "fee": 60.0, 
+      "price": 0.75, 
+      "time": "Fri, 09 Feb 2018 16:09:23 GMT", 
+      "type": "Sell", 
+      "value": 3000.0
+    }, 
+    {
+      "amount": 5000, 
+      "fee": 75.0, 
+      "price": 0.75, 
+      "time": "Fri, 09 Feb 2018 16:06:08 GMT", 
+      "type": "Sell", 
+      "value": 3750.0
+    }, 
+    {
+      "amount": 5000, 
+      "fee": 75.0, 
+      "price": 0.75, 
+      "time": "Fri, 09 Feb 2018 16:05:44 GMT", 
+      "type": "Sell", 
+      "value": 3750.0
+    }, 
+    {
+      "amount": 10000, 
+      "fee": 150.0, 
+      "price": 0.75, 
+      "time": "Fri, 09 Feb 2018 16:05:18 GMT", 
+      "type": "Sell", 
+      "value": 7500.0
+    }, 
+    {
+      "amount": 5000, 
+      "fee": 37.5, 
+      "price": 0.75, 
+      "time": "Fri, 09 Feb 2018 15:54:54 GMT", 
+      "type": "Sell", 
+      "value": 3750.0
+    }, 
+    {
+      "amount": 1000, 
+      "fee": 14.8, 
+      "price": 0.74, 
+      "time": "Fri, 09 Feb 2018 15:37:21 GMT", 
+      "type": "Sell", 
+      "value": 740.0
+    }, 
+    {
+      "amount": 4000, 
+      "fee": 59.2, 
+      "price": 0.74, 
+      "time": "Fri, 09 Feb 2018 15:36:58 GMT", 
+      "type": "Sell", 
+      "value": 2960.0
+    }, 
+    {
+      "amount": 10000, 
+      "fee": 148.0, 
+      "price": 0.74, 
+      "time": "Fri, 09 Feb 2018 15:28:44 GMT", 
+      "type": "Sell", 
+      "value": 7400.0
+    }, 
+    {
+      "amount": 1000, 
+      "fee": 14.6, 
+      "price": 0.73, 
+      "time": "Fri, 09 Feb 2018 15:18:53 GMT", 
+      "type": "Sell", 
+      "value": 730.0
+    }, 
+    {
+      "amount": 1000, 
+      "fee": 14.3, 
+      "price": 0.715, 
+      "time": "Fri, 09 Feb 2018 15:11:45 GMT", 
+      "type": "Sell", 
+      "value": 715.0
+    }, 
+    {
+      "amount": 7000, 
+      "fee": 50.4, 
+      "price": 0.72, 
+      "time": "Fri, 09 Feb 2018 15:11:41 GMT", 
+      "type": "Sell", 
+      "value": 5040.0
+    }, 
+    {
+      "amount": 1000, 
+      "fee": 14.2, 
+      "price": 0.71, 
+      "time": "Fri, 09 Feb 2018 15:06:38 GMT", 
+      "type": "Sell", 
+      "value": 710.0
+    }
+  ], 
+  "orders_pending": [
+    {
+      "amount": 1000, 
+      "fee": 7.24, 
+      "filled": 0, 
+      "price": 72.4, 
+      "status": "Pending", 
+      "type": "Sell", 
+      "value": 72400.0
+    }, 
+    {
+      "amount": 1000, 
+      "fee": 7.24, 
+      "filled": 0, 
+      "price": 72.4, 
+      "status": "Pending", 
+      "type": "Sell", 
+      "value": 72400.0
+    }, 
+    {
+      "amount": 1000, 
+      "fee": 7.23, 
+      "filled": 0, 
+      "price": 72.3, 
+      "status": "Pending", 
+      "type": "Sell", 
+      "value": 72300.0
+    }, 
+    {
+      "amount": 1000, 
+      "fee": 7.26, 
+      "filled": 0, 
+      "price": 72.6, 
+      "status": "Pending", 
+      "type": "Sell", 
+      "value": 72600.0
+    }, 
+    {
+      "amount": 1000, 
+      "fee": 7.26, 
+      "filled": 0, 
+      "price": 72.6, 
+      "status": "Pending", 
+      "type": "Sell", 
+      "value": 72600.0
+    }, 
+    {
+      "amount": 1000, 
+      "fee": 7.25, 
+      "filled": 0, 
+      "price": 72.5, 
+      "status": "Pending", 
+      "type": "Sell", 
+      "value": 72500.0
+    }, 
+    {
+      "amount": 1000, 
+      "fee": 20, 
+      "filled": 1000, 
+      "price": 73.5, 
+      "status": "Pending", 
+      "type": "Buy", 
+      "value": 73500.0
+    }
+  ], 
+  "sell_orders": [
+    {
+      "price": 72.3, 
+      "vol": 1000
+    }, 
+    {
+      "price": 72.4, 
+      "vol": 2000
+    }, 
+    {
+      "price": 72.5, 
+      "vol": 1000
+    }, 
+    {
+      "price": 72.6, 
+      "vol": 2000
+    }, 
+    {
+      "price": 73.5, 
+      "vol": 15180
+    }, 
+    {
+      "price": 75.1, 
+      "vol": 23000
+    }, 
+    {
+      "price": 75.2, 
+      "vol": 15000
+    }, 
+    {
+      "price": 75.3, 
+      "vol": 18000
+    }, 
+    {
+      "price": 76.8, 
+      "vol": 1000
+    }, 
+    {
+      "price": 76.9, 
+      "vol": 10000
+    }, 
+    {
+      "price": 77.0, 
+      "vol": 10000
+    }, 
+    {
+      "price": 77.1, 
+      "vol": 1000
+    }, 
+    {
+      "price": 89.0, 
+      "vol": 3000
+    }, 
+    {
+      "price": 90.0, 
+      "vol": 5000
+    }, 
+    {
+      "price": 100.0, 
+      "vol": 1000
+    }, 
+    {
+      "price": 120.0, 
+      "vol": 5000
+    }
+  ]
+}
